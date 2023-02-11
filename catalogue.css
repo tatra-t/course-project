@@ -5,7 +5,7 @@
   src: url("./fonts/DelaGothicOne-Regular.woff2") format("woff2"),
     url("./fonts/DelaGothicOne-Regular.woff") format("woff"),
     url("./fonts/DelaGothicOne-Regular.eot") format("eot"),
-    url("./fonts//DelaGothicOne-Regular.ttf") format("ttf");
+    url("./fonts/DelaGothicOne-Regular.ttf") format("ttf");
 }
 @font-face {
   font-family: "Raleway-Light";
@@ -186,12 +186,12 @@ details>summary {
   font-family: "Dela Gothic One";
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
+  font-size: 35px;
   line-height: 140.3%;
   text-transform: uppercase;
   color: #000000;
   justify-self: end;
-  padding: 0 0 0 20px;
+  padding-bottom: 20px;
 }
 
 .products-list {
