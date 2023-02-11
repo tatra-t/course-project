@@ -169,7 +169,7 @@ details>summary {
   text-transform: uppercase;
   color: #000000;
   justify-self: end;
-  padding: 0 0 20px 20px;
+  padding: 0 0 0 20px;
 }
 
 .products-list {
@@ -261,11 +261,116 @@ details>summary {
   margin-right: 0;
 }
 
+/*footer*/
+
 .footer {
   width: 100%;
   height: 354px;
-  background-color: lightgrey;
+  background: url(../img/Rectangle86.png) no-repeat 100% 100%;
+  background: #f4f4f4;
+  padding: 70px 80px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  font-family: "Raleway-Light";
 }
+
+.footer-container__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-contacts__address {
+  font-style: normal;
+}
+
+.footer-container,
+.footer-container__nav {
+  display: flex;
+}
+
+.footer-container__nav,
+.footer-social,
+.footer-contacts {
+  flex-basis: auto;
+}
+
+.footer-contacts {
+  margin-left: 315px;
+}
+
+.footer-social {
+  margin-left: 178px;
+}
+
+.footer__logo {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.footer-container__nav {
+  gap: 50px;
+}
+
+.footer-social img {
+  margin-right: 15px;
+  margin-top: 10px;
+  margin-bottom: 65px;
+}
+
+.footer-social__text,
+.footer-contacts__text {
+  text-decoration: underline;
+}
+
+.footer-contacts__tel,
+.footer-contacts__address,
+.footer-contacts__time {
+  margin-top: 10px;
+  font-feature-settings: "pnum";
+  font-feature-settings: "lnum";
+}
+
+.footer__copyright {
+  font-feature-settings: "pnum";
+  font-feature-settings: "lnum";
+}
+
+.footer-contacts__time span {
+  margin-right: 20px;
+}
+
+.footer-container__item {
+  margin-bottom: 10px;
+}
+
+.footer-container__item:last-child a {
+  font-weight: 700;
+  color: #da1f39;
+  font-family: "Raleway-Bold";
+}
+
+.footer-container__item:last-child {
+  margin-top: 40px;
+}
+
+.footer-contacts-mobile {
+  display: none;
+}
+
+.footer__copyright-mobile {
+  display: none;
+}
+
+
+
+
 
 @media (max-width: 850px) {
   .products-header {
