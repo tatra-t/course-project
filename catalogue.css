@@ -2,12 +2,34 @@
 
 @font-face {
   font-family: "Dela Gothic One";
-  src: url("./font_DelaGothicOne/DelaGothicOne-Regular.woff2") format("woff2"),
-    url("./font_DelaGothicOne/DelaGothicOne-Regular.woff") format("woff"),
-    url("./font_DelaGothicOne/DelaGothicOne-Regular.eot") format("eot"),
-    url("./font_DelaGothicOne/DelaGothicOne-Regular.ttf") format("ttf");
+  src: url("./fonts/DelaGothicOne-Regular.woff2") format("woff2"),
+    url("./fonts/DelaGothicOne-Regular.woff") format("woff"),
+    url("./fonts/DelaGothicOne-Regular.eot") format("eot"),
+    url("./fonts//DelaGothicOne-Regular.ttf") format("ttf");
+}
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("../fonts/RalewayFont/Raleway-Light.woff") format("woff"),
+    url("../fonts/RalewayFont/Raleway-Light.eot") format("OpenType"),
+    url("../fonts/RalewayFont/Raleway-Light.ttf") format("TrueType");
+  font-weight: 300;
+  font-style: normal;
 }
 
+@font-face {
+  font-family: "Raleway-Bold";
+  src: url("../fonts/RalewayFont/Raleway-Bold.woff") format("woff"),
+    url("../fonts/RalewayFont/Raleway-Bold.eot") format("OpenType"),
+    url("../fonts/RalewayFont/Raleway-Bold.ttf") format("TrueType");
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway-Regular";
+  src: url("../fonts/Raleway-Regular.woff") format("woff"),
+    url("../fonts/RalewayFont/Raleway-Regular.eot") format("OpenType"),
+    url("../fonts/RalewayFont/Raleway-Regular.ttf") format("TrueType");
+}
 * {
   box-sizing: border-box;
   margin: 0;
@@ -15,7 +37,7 @@
 }
 
 body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Raleway-Regular", sans-serif;
   font-style: normal;
 }
 
