@@ -266,15 +266,13 @@ summary:after {
   content: url(images/Vector\ 12.png);
   padding-left: 10px;
 }
-summary:before {
-  display: none;
-}
+
 
 details[open] summary:after {
   content: url(images/Vector\ 11.png);
   padding-left: 10px;
 }
-details[open] summary:before {
+.filters-title__mini::marker {
   display: none;
 }
 
