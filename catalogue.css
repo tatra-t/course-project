@@ -272,7 +272,7 @@ details[open] summary:after {
   content: url(images/Vector\ 11.png);
   padding-left: 10px;
 }
-.filters-title__mini::marker {
+summary::-webkit-details-marker {
   display: none;
 }
 
