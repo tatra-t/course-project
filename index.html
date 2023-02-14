@@ -9,7 +9,71 @@
     <link rel="stylesheet" href="catalogue.css">
   </head>
   <body>
-    <header class="header">Header</header>
+    <header class="header">
+      <div class="header__navigation">
+        <div class="header_nav_catalogue">
+          <a class="nav_item_link item_catalogue" href="#">Каталог</a>
+          <div class="catalogue__dropdown">
+            <div class="catalogue__navigation">
+              <ul class="catalogue_nav">
+                <li class="catalogue_item item_shown">жінкам</li>
+                <li class="catalogue_item item_hidden">чоловікам</li>
+                <li class="catalogue_item item_hidden">дітям</li>
+                <li class="catalogue_item item_hidden">аксесуари</li>
+                <li class="catalogue_item item_hidden">дім</li>
+              </ul>
+            </div>
+            <div class="catalogue_woman">
+              <ul class="woman_list">
+                <li class="woman_item">Вишиті сукні</li>
+                <li class="woman_item">Жіночі вишиванки</li>
+                <li class="woman_item">Конструктор вишиванки</li>
+              </ul>
+            </div>
+            <div class="catalogue_woman">
+              <ul class="woman_list">
+                <li class="woman_item">Світшоти та светри</li>
+                <li class="woman_item">Футболки</li>
+                <li class="woman_item">Брюки та комбінезони</li>
+              </ul>
+            </div>
+            <div class="catalogue_woman">
+              <ul class="woman_list">
+                <li class="woman_item">Пальта та куртки</li>
+                <li class="woman_item">Спідниці</li>
+              </ul>
+            </div>
+            <div class="catalogue_image">
+              <img src="images/image_header.jpg" alt="Photo">
+            </div>
+          </div>
+        </div>
+        <a class="nav_item_link" href="#">Знижки</a>
+        <a class="nav_item_link" href="#">Блог</a>
+        <a class="nav_item_link" href="#">Про нас</a>
+        <div class="header_button">
+          <a class="button_mobile" href="menu_mobile.html"><img src="images/button_mobile.png" alt="button"></a>
+        </div>
+      </div>
+      <div class="header__logo">
+        <img class="logo_img" src="images/logo.png" alt="Logo">
+      </div>
+      <div class="header__menu">
+        <ul class="menu_list">
+          <li class="menu_item item_language icon_arrow">UA</li>
+          <li class="menu_item item_currency icon_arrow">&#8372;</li>
+          <li class="menu_item">
+            <a href="tel:+38 097 888 92 92" class="item_number">+38 097 888 92 92</a>
+          </li>
+          <li class="menu_item item_search">
+            <img src="images/sign_search.png" alt="Search icon" />
+          </li>
+          <li class="menu_item item_cart">
+            <img src="images/cart.png" alt="Cart icon" />
+          </li>
+        </ul>
+      </div>
+    </header>
     <main class="catalogue-content">
       <div class="filters">
         <details class="filters-size">
