@@ -511,7 +511,7 @@ details > summary {
 
 .footer {
   height: 354px;
-  background: url(../img/Rectangle86.png) no-repeat 100% 100%;
+  background: url(../image/Rectangle86.png) no-repeat 100% 100%;
   background: #f4f4f4;
   padding: 70px 80px;
   font-weight: 300;
@@ -526,7 +526,7 @@ details > summary {
   padding: 0;
 }
 
-.footer a {
+.footer__link {
   text-decoration: none;
   color: black;
 }
@@ -563,7 +563,7 @@ details > summary {
   gap: 50px;
 }
 
-.footer-social img {
+.footer__image {
   margin-right: 15px;
   margin-top: 10px;
   margin-bottom: 65px;
@@ -587,7 +587,7 @@ details > summary {
   font-feature-settings: "lnum";
 }
 
-.footer-contacts__time span {
+.footer__data {
   margin-right: 20px;
 }
 
@@ -612,7 +612,19 @@ details > summary {
 .footer__copyright-mobile {
   display: none;
 }
+@media screen and (min-width: 1367px) {
+  .footer-container {
+    justify-content: space-evenly;
+  }
+}
+@media screen and (max-width: 1363px) {
 
+  .footer-contacts,
+  .footer-social,
+  .footer-container__nav {
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1130px) {
   .nav_item_link {
     padding-right: 0;
@@ -676,6 +688,9 @@ details > summary {
 
   .icon_arrow {
     display: none;
+  }
+  .footer {
+    padding: 30px 10px;
   }
 }
 @media (max-width: 850px) {
@@ -773,34 +788,54 @@ details > summary {
   .products-pagination__show-more {
     justify-content: center;
   }
-  .footer-container__nav,
-  .footer-social,
-  .footer-contacts {
-    flex-basis: 30%;
-  }
+    .footer-container__nav,
+    .footer-social,
+    .footer-contacts {
+      flex-basis: 30%;
+    }
+  
+    .footer-social,
+    .footer-contacts {
+      text-align: center;
+    }
+  
+    .footer {
+      padding: 50px 20px;
+      height: auto;
+    }
+  
+    .footer-container__nav {
+      gap: 25px;
+    }
+  
+    .footer__data {
+      display: block;
+    }
+  
+    .footer__image {
+      margin-right: 8px;
+    }
 
-  .footer-contacts,
-  .footer-social {
-    margin-left: 50px;
-  }
-
+}
+@media screen and (max-width: 735px) {
   .footer {
-    padding: 50px 20px;
-    height: auto;
+    padding: 30px 8px;
   }
 
   .footer-container__nav {
-    gap: 25px;
+    gap: 12px;
   }
 
-  .footer span {
-    display: block;
+  .footer-container,
+  .footer-container__nav {
+    flex-wrap: wrap;
   }
 
-  .footer__copyright-mobile {
-    display: block;
+  .footer-social__images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
-}
 
 @media screen and (max-width: 675px) {
   .header {
@@ -926,6 +961,26 @@ details > summary {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 513px) and (min-width: 376px) {
+  .footer-container {
+    display: block;
+  }
+
+  .footer-container__nav {
+    justify-content: space-around;
+  }
+
+  .footer-contacts,
+  .footer-social {
+    margin-top: 40px;
+  }
+
+  .footer-contacts__text,
+  .footer-social__text {
+    margin-bottom: 15px;
+  }
+}
+
 @media screen and (max-width: 375px) {
   .header {
     padding-left: 10px;
@@ -951,4 +1006,59 @@ details > summary {
     margin: 0;
     margin-top: 5px;
   }
+    .footer-contacts,
+    .footer__copyright {
+      display: none;
+    }
+  
+    .footer-container__nav,
+    .footer-social {
+      flex-basis: auto;
+    }
+  
+    .footer {
+      padding: 20px 10px;
+    }
+  
+    .footer-social {
+      margin-left: 15px;
+      width: 35%;
+    }
+  
+    .footer-container__nav {
+      gap: 30px;
+    }
+  
+    .footer__image {
+      margin-right: 15px;
+      margin-top: 7px;
+      margin-bottom: 0px;
+    }
+  
+    .footer-container__item:last-child {
+      margin-top: 20px;
+    }
+  
+    .footer-contacts-mobile {
+      display: block;
+      padding-top: 10px;
+    }
+  
+    .footer__data {
+      display: inline;
+    }
+  
+    .footer__copyright-mobile {
+      display: block;
+    }
+  
+    .footer__copyright-mobile {
+      font-feature-settings: "pnum";
+      font-feature-settings: "lnum";
+      margin-top: 20px;
+    }
+  
+    .footer-social__images {
+      justify-content: flex-start;
+    }
 }
