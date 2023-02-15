@@ -2,605 +2,636 @@
 <html lang="uk">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etnodim</title>
-    <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="catalogue.css">
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="catalogue.css" />
   </head>
   <body>
-    <header class="header">
-      <div class="header__navigation">
-        <div class="header_nav_catalogue">
-          <a class="nav_item_link item_catalogue" href="#">Каталог</a>
-          <div class="catalogue__dropdown">
-            <div class="catalogue__navigation">
-              <ul class="catalogue_nav">
-                <li class="catalogue_item item_shown">жінкам</li>
-                <li class="catalogue_item item_hidden">чоловікам</li>
-                <li class="catalogue_item item_hidden">дітям</li>
-                <li class="catalogue_item item_hidden">аксесуари</li>
-                <li class="catalogue_item item_hidden">дім</li>
-              </ul>
-            </div>
-            <div class="catalogue_woman">
-              <ul class="woman_list">
-                <li class="woman_item">Вишиті сукні</li>
-                <li class="woman_item">Жіночі вишиванки</li>
-                <li class="woman_item">Конструктор вишиванки</li>
-              </ul>
-            </div>
-            <div class="catalogue_woman">
-              <ul class="woman_list">
-                <li class="woman_item">Світшоти та светри</li>
-                <li class="woman_item">Футболки</li>
-                <li class="woman_item">Брюки та комбінезони</li>
-              </ul>
-            </div>
-            <div class="catalogue_woman">
-              <ul class="woman_list">
-                <li class="woman_item">Пальта та куртки</li>
-                <li class="woman_item">Спідниці</li>
-              </ul>
-            </div>
-            <div class="catalogue_image">
-              <img src="images/image_header.jpg" alt="Photo">
-            </div>
-          </div>
-        </div>
-        <a class="nav_item_link" href="#">Знижки</a>
-        <a class="nav_item_link" href="#">Блог</a>
-        <a class="nav_item_link" href="#">Про нас</a>
-        <div class="header_button">
-          <a class="button_mobile" href="menu_mobile.html"><img src="images/button_mobile.png" alt="button"></a>
-        </div>
-      </div>
-      <div class="header__logo">
-        <img class="logo_img" src="images/logo.png" alt="Logo">
-      </div>
-      <div class="header__menu">
-        <ul class="menu_list">
-          <li class="menu_item item_language icon_arrow">UA</li>
-          <li class="menu_item item_currency icon_arrow">&#8372;</li>
-          <li class="menu_item">
-            <a href="tel:+38 097 888 92 92" class="item_number">+38 097 888 92 92</a>
-          </li>
-          <li class="menu_item item_search">
-            <img src="images/sign_search.png" alt="Search icon" />
-          </li>
-          <li class="menu_item item_cart">
-            <img src="images/cart.png" alt="Cart icon" />
-          </li>
-        </ul>
-      </div>
-    </header>
-    <main class="catalogue-content">
-      <div class="filters">
-        <details class="filters-size">
-          <summary class="filters-title">Розмір</summary>
-          <div class="filters-subtitle">
-            <div class="filters-title__item">
-              <input type="checkbox" id="size32" name="size" value="size32" />
-              <label for="size32">32 | XXS (53)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size34" name="size" value="size34" />
-              <label for="size34">34 | XS (60)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size36" name="size" value="size36" />
-              <label for="size36">36 | S (60)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size38" name="size" value="size38" />
-              <label for="size38">38 | M (60)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size40" name="size" value="size40" />
-              <label for="size40">40 | L (60)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size42" name="size" value="size42" />
-              <label for="size42">42 | XL (58)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size46" name="size" value="size46" />
-              <label for="size46">46 | XXL (13)</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="size48" name="size" value="size48" />
-              <label for="size48">48 | XХXL (4)</label>
-            </div>
-          </div>
-        </details>
-        <details class="filters-color">
-          <summary class="filters-title">Колір</summary>
-          <div class="filters-subtitle">
-            <div class="filters-title__item">
-              <input type="checkbox" id="white" name="color" value="white" />
-              <label for="white">білий</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="black" name="color" value="black" />
-              <label for="black">чорний</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="beige" name="color" value="beige" />
-              <label for="beige">бежевий</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="green" name="color" value="green" />
-              <label for="green">зелений</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="blue" name="color" value="blue" />
-              <label for="blue">синій</label>
-            </div>
-          </div>
-        </details>
-        <details class="filters-season">
-          <summary class="filters-title">Сезон</summary>
-          <div class="filters-subtitle">
-            <div class="filters-title__item">
-              <input type="checkbox" id="easy" name="season" value="easy" />
-              <label for="easy">Easy collection</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="all" name="season" value="all" />
-              <label for="all">Усі сезони</label>
-            </div>
-          </div>
-        </details>
-        <details class="filters-textile">
-          <summary class="filters-title">Тканина</summary>
-          <div class="filters-subtitle">
-            <div class="filters-title__item">
-              <input type="checkbox" id="linen" name="textile" value="linen" />
-              <label for="linen">Льон</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="satin" name="textile" value="satin" />
-              <label for="satin">Сатин</label>
-            </div>
-          </div>
-        </details>
-        <details class="filters-sleeve">
-          <summary class="filters-title">Рукав</summary>
-          <div class="filters-subtitle">
-            <div class="filters-title__item">
-              <input type="checkbox" id="long" name="sleeve" value="long" />
-              <label for="long">Довгий рукав</label>
-            </div>
-            <div class="filters-title__item">
-              <input type="checkbox" id="short" name="sleeve" value="short" />
-              <label for="short">3/4 рукав</label>
-            </div>
-          </div>
-        </details>
-      </div>
-
-      <div class="products">
-        <div class="products-header">
-          <div class="products-sorting">
-            <div class="products-sorting__grid-icons">
-              <div class="product-grid__icon product-grid__icon_small">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+    <div class="catalogue-container">
+      <header class="header">
+        <div class="header__navigation">
+          <div class="header_nav_catalogue">
+            <a class="nav_item_link item_catalogue" href="#">Каталог</a>
+            <div class="catalogue__dropdown">
+              <div class="catalogue__navigation">
+                <ul class="catalogue_nav">
+                  <li class="catalogue_item item_shown">жінкам</li>
+                  <li class="catalogue_item item_hidden">чоловікам</li>
+                  <li class="catalogue_item item_hidden">дітям</li>
+                  <li class="catalogue_item item_hidden">аксесуари</li>
+                  <li class="catalogue_item item_hidden">дім</li>
+                </ul>
               </div>
-
-              <div class="product-grid__icon product-grid__icon_large">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
+              <div class="catalogue_woman">
+                <ul class="woman_list">
+                  <li class="woman_item">Вишиті сукні</li>
+                  <li class="woman_item">Жіночі вишиванки</li>
+                  <li class="woman_item">Конструктор вишиванки</li>
+                </ul>
+              </div>
+              <div class="catalogue_woman">
+                <ul class="woman_list">
+                  <li class="woman_item">Світшоти та светри</li>
+                  <li class="woman_item">Футболки</li>
+                  <li class="woman_item">Брюки та комбінезони</li>
+                </ul>
+              </div>
+              <div class="catalogue_woman">
+                <ul class="woman_list">
+                  <li class="woman_item">Пальта та куртки</li>
+                  <li class="woman_item">Спідниці</li>
+                </ul>
+              </div>
+              <div class="catalogue_image">
+                <img src="images/image_header.jpg" alt="Photo" />
               </div>
             </div>
-            <div class="filters-mini">
-              <details class="filters-item">
-                <summary class="filters-title__mini">Фільтр</summary>
-                <div class="filters-item__grid">
-                  <div class="filters-item__grid1">
-                    <p class="filters-title">Розмір</p>
-                    <div class="filters-subtitle">
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size32"
-                          name="size"
-                          value="size32"
-                        />
-                        <label for="size32">32 | XXS (53)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size34"
-                          name="size"
-                          value="size34"
-                        />
-                        <label for="size34">34 | XS (60)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size36"
-                          name="size"
-                          value="size36"
-                        />
-                        <label for="size36">36 | S (60)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size38"
-                          name="size"
-                          value="size38"
-                        />
-                        <label for="size38">38 | M (60)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size40"
-                          name="size"
-                          value="size40"
-                        />
-                        <label for="size40">40 | L (60)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size42"
-                          name="size"
-                          value="size42"
-                        />
-                        <label for="size42">42 | XL (58)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size46"
-                          name="size"
-                          value="size46"
-                        />
-                        <label for="size46">46 | XXL (13)</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="size48"
-                          name="size"
-                          value="size48"
-                        />
-                        <label for="size48">48 | XХXL (4)</label>
-                      </div>
-                    </div>
-                    <p class="filters-title">Колір</p>
-                    <div class="filters-subtitle">
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="white"
-                          name="color"
-                          value="white"
-                        />
-                        <label for="white">білий</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="black"
-                          name="color"
-                          value="black"
-                        />
-                        <label for="black">чорний</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="beige"
-                          name="color"
-                          value="beige"
-                        />
-                        <label for="beige">бежевий</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="green"
-                          name="color"
-                          value="green"
-                        />
-                        <label for="green">зелений</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="blue"
-                          name="color"
-                          value="blue"
-                        />
-                        <label for="blue">синій</label>
-                      </div>
-                    </div>
-                    <br />
-                  </div>
-                  <div class="filters-item__grid2">
-                    <p class="filters-title">Сезон</p>
-                    <div class="filters-subtitle">
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="easy"
-                          name="season"
-                          value="easy"
-                        />
-                        <label for="easy">Easy collection</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="all"
-                          name="season"
-                          value="all"
-                        />
-                        <label for="all">Усі сезони</label>
-                      </div>
-                    </div>
-                    <p class="filters-title">Тканина</p>
-                    <div class="filters-subtitle">
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="linen"
-                          name="textile"
-                          value="linen"
-                        />
-                        <label for="linen">Льон</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="satin"
-                          name="textile"
-                          value="satin"
-                        />
-                        <label for="satin">Сатин</label>
-                      </div>
-                    </div>
-                    <p class="filters-title">Рукав</p>
-                    <div class="filters-subtitle">
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="long"
-                          name="sleeve"
-                          value="long"
-                        />
-                        <label for="long">Довгий рукав</label>
-                      </div>
-                      <div class="filters-title__item">
-                        <input
-                          type="checkbox"
-                          id="short"
-                          name="sleeve"
-                          value="short"
-                        />
-                        <label for="short">3/4 рукав</label>
-                      </div>
-                    </div>
-                  </div>
+          </div>
+          <a class="nav_item_link" href="#">Знижки</a>
+          <a class="nav_item_link" href="#">Блог</a>
+          <a class="nav_item_link" href="#">Про нас</a>
+          <div class="header_button">
+            <a class="button_mobile" href="menu_mobile.html"
+              ><img src="images/button_mobile.png" alt="button"
+            /></a>
+          </div>
+        </div>
+        <div class="header__logo">
+          <img class="logo_img" src="images/logo.png" alt="Logo" />
+        </div>
+        <div class="header__menu">
+          <ul class="menu_list">
+            <li class="menu_item item_language icon_arrow">UA</li>
+            <li class="menu_item item_currency icon_arrow">&#8372;</li>
+            <li class="menu_item">
+              <a href="tel:+38 097 888 92 92" class="item_number"
+                >+38 097 888 92 92</a
+              >
+            </li>
+            <li class="menu_item item_search">
+              <img src="images/sign_search.png" alt="Search icon" />
+            </li>
+            <li class="menu_item item_cart">
+              <img src="images/cart.png" alt="Cart icon" />
+            </li>
+          </ul>
+        </div>
+      </header>
+      <div class="subheader">
+        <a href="#" class="subheader__item">Головна</a>
+        <div class="subheader__division-line"></div>
+        <a href="#" class="subheader__item">Жінкам</a>
+        <div class="subheader__division-line"></div>
+        <a href="#" class="subheader__item">Жіночі вишиванки</a>
+      </div>
+      <main class="catalogue-content">
+        <div class="filters">
+          <details class="filters-size">
+            <summary class="filters-title">Розмір</summary>
+            <div class="filters-subtitle">
+              <div class="filters-title__item">
+                <input type="checkbox" id="size32" name="size" value="size32" />
+                <label for="size32">32 | XXS (53)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size34" name="size" value="size34" />
+                <label for="size34">34 | XS (60)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size36" name="size" value="size36" />
+                <label for="size36">36 | S (60)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size38" name="size" value="size38" />
+                <label for="size38">38 | M (60)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size40" name="size" value="size40" />
+                <label for="size40">40 | L (60)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size42" name="size" value="size42" />
+                <label for="size42">42 | XL (58)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size46" name="size" value="size46" />
+                <label for="size46">46 | XXL (13)</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="size48" name="size" value="size48" />
+                <label for="size48">48 | XХXL (4)</label>
+              </div>
+            </div>
+          </details>
+          <details class="filters-color">
+            <summary class="filters-title">Колір</summary>
+            <div class="filters-subtitle">
+              <div class="filters-title__item">
+                <input type="checkbox" id="white" name="color" value="white" />
+                <label for="white">білий</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="black" name="color" value="black" />
+                <label for="black">чорний</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="beige" name="color" value="beige" />
+                <label for="beige">бежевий</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="green" name="color" value="green" />
+                <label for="green">зелений</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="blue" name="color" value="blue" />
+                <label for="blue">синій</label>
+              </div>
+            </div>
+          </details>
+          <details class="filters-season">
+            <summary class="filters-title">Сезон</summary>
+            <div class="filters-subtitle">
+              <div class="filters-title__item">
+                <input type="checkbox" id="easy" name="season" value="easy" />
+                <label for="easy">Easy collection</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="all" name="season" value="all" />
+                <label for="all">Усі сезони</label>
+              </div>
+            </div>
+          </details>
+          <details class="filters-textile">
+            <summary class="filters-title">Тканина</summary>
+            <div class="filters-subtitle">
+              <div class="filters-title__item">
+                <input
+                  type="checkbox"
+                  id="linen"
+                  name="textile"
+                  value="linen"
+                />
+                <label for="linen">Льон</label>
+              </div>
+              <div class="filters-title__item">
+                <input
+                  type="checkbox"
+                  id="satin"
+                  name="textile"
+                  value="satin"
+                />
+                <label for="satin">Сатин</label>
+              </div>
+            </div>
+          </details>
+          <details class="filters-sleeve">
+            <summary class="filters-title">Рукав</summary>
+            <div class="filters-subtitle">
+              <div class="filters-title__item">
+                <input type="checkbox" id="long" name="sleeve" value="long" />
+                <label for="long">Довгий рукав</label>
+              </div>
+              <div class="filters-title__item">
+                <input type="checkbox" id="short" name="sleeve" value="short" />
+                <label for="short">3/4 рукав</label>
+              </div>
+            </div>
+          </details>
+        </div>
+
+        <div class="products">
+          <div class="products-header">
+            <div class="products-sorting">
+              <div class="products-sorting__grid-icons">
+                <div class="product-grid__icon product-grid__icon_small">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
                 </div>
-              </details>
+
+                <div class="product-grid__icon product-grid__icon_large">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+              </div>
+              <div class="filters-mini">
+                <details class="filters-item">
+                  <summary class="filters-title__mini">Фільтри</summary>
+                  <div class="filters-item__grid">
+                    <div class="filters-item__grid1">
+                      <p class="filters-title">Розмір</p>
+                      <div class="filters-subtitle">
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size32"
+                            name="size"
+                            value="size32"
+                          />
+                          <label for="size32">32 | XXS (53)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size34"
+                            name="size"
+                            value="size34"
+                          />
+                          <label for="size34">34 | XS (60)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size36"
+                            name="size"
+                            value="size36"
+                          />
+                          <label for="size36">36 | S (60)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size38"
+                            name="size"
+                            value="size38"
+                          />
+                          <label for="size38">38 | M (60)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size40"
+                            name="size"
+                            value="size40"
+                          />
+                          <label for="size40">40 | L (60)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size42"
+                            name="size"
+                            value="size42"
+                          />
+                          <label for="size42">42 | XL (58)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size46"
+                            name="size"
+                            value="size46"
+                          />
+                          <label for="size46">46 | XXL (13)</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="size48"
+                            name="size"
+                            value="size48"
+                          />
+                          <label for="size48">48 | XХXL (4)</label>
+                        </div>
+                      </div>
+                      <p class="filters-title">Колір</p>
+                      <div class="filters-subtitle">
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="white"
+                            name="color"
+                            value="white"
+                          />
+                          <label for="white">білий</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="black"
+                            name="color"
+                            value="black"
+                          />
+                          <label for="black">чорний</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="beige"
+                            name="color"
+                            value="beige"
+                          />
+                          <label for="beige">бежевий</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="green"
+                            name="color"
+                            value="green"
+                          />
+                          <label for="green">зелений</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="blue"
+                            name="color"
+                            value="blue"
+                          />
+                          <label for="blue">синій</label>
+                        </div>
+                      </div>
+                      <br />
+                    </div>
+                    <div class="filters-item__grid2">
+                      <p class="filters-title">Сезон</p>
+                      <div class="filters-subtitle">
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="easy"
+                            name="season"
+                            value="easy"
+                          />
+                          <label for="easy">Easy collection</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="all"
+                            name="season"
+                            value="all"
+                          />
+                          <label for="all">Усі сезони</label>
+                        </div>
+                      </div>
+                      <p class="filters-title">Тканина</p>
+                      <div class="filters-subtitle">
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="linen"
+                            name="textile"
+                            value="linen"
+                          />
+                          <label for="linen">Льон</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="satin"
+                            name="textile"
+                            value="satin"
+                          />
+                          <label for="satin">Сатин</label>
+                        </div>
+                      </div>
+                      <p class="filters-title">Рукав</p>
+                      <div class="filters-subtitle">
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="long"
+                            name="sleeve"
+                            value="long"
+                          />
+                          <label for="long">Довгий рукав</label>
+                        </div>
+                        <div class="filters-title__item">
+                          <input
+                            type="checkbox"
+                            id="short"
+                            name="sleeve"
+                            value="short"
+                          />
+                          <label for="short">3/4 рукав</label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </div>
+              <div class="products-sorting__form">
+                <form action="sorting-results" method="get">
+                  <label
+                    for="sorting-parameters"
+                    class="products-sorting__text products-sorting__label"
+                    >Сортувати за:</label
+                  >
+                  <select
+                    name="sorting-parameters"
+                    id="sorting-parameters"
+                    class="products-sorting__text products-sorting__selector"
+                  >
+                    <option value="new-products" selected>новинки</option>
+                    <option value="price">ціна</option>
+                    <option value="discounts">знижки</option>
+                    <option value="for-women">для неї</option>
+                    <option value="for-men">для нього</option>
+                  </select>
+                </form>
+              </div>
             </div>
-            <div class="products-sorting__form">
-              <form action="sorting-results" method="get">
-                <label
-                  for="sorting-parameters"
-                  class="products-sorting__text products-sorting__label"
-                  >Сортувати за:</label
+            <h1 class="products-title">Жіночі вишиванки</h1>
+          </div>
+
+          <div class="products-list">
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/lito_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/lito_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/lito_l.jpg"
+                  alt="Вишиванка Літо"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Вишиванка з рослинним орнаментом Lito
+                </p>
+                <p class="product-list__price">2 800 грн.</p>
+              </div>
+            </div>
+
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/fialka_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/fialka_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/fialka_l.jpg"
+                  alt="Вишиванка Фіалка"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Вишиванка блакитного кольору з рослинним орнаментом Fialka
+                </p>
+                <p class="product-list__price">3 400 грн.</p>
+              </div>
+            </div>
+
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/nezalezhni_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/nezalezhni_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/nezalezhni_l.jpg"
+                  alt="Вишиванка Незалежні"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Лляна вишиванка з геометричним орнаментом Nezalezhni
+                </p>
+                <p class="product-list__price">4 200 грн.</p>
+              </div>
+            </div>
+
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/kashtan_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/kashtan_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/kashtan_l.jpg"
+                  alt="Вишиванка Каштан"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Вишиванка з рослинним орнаментом Kashtan
+                </p>
+                <p class="product-list__price">3 800 грн.</p>
+              </div>
+            </div>
+
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/indi_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/indi_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/indi_l.jpg"
+                  alt="Вишиванка Інді"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Легка блузка вільного крою з орнаментом Indi
+                </p>
+                <p class="product-list__price">3 800 грн.</p>
+              </div>
+            </div>
+
+            <div class="product-list__card">
+              <picture>
+                <source
+                  srcset="./images/svitanok_m.jpg"
+                  media="(max-width:700px) and (min-width:500px)"
+                />
+                <source
+                  srcset="./images/svitanok_s.jpg"
+                  media="(max-width:500px) and (min-width:0px)"
+                />
+                <img
+                  src="./images/svitanok_l.jpg"
+                  alt="Вишиванка Світанок"
+                  class="product-list__image"
+                />
+              </picture>
+              <div class="product-list__text">
+                <p class="product-list__description">
+                  Біла вишиванка вільного крою Svitanok
+                </p>
+                <p class="product-list__price">2 980 грн.</p>
+              </div>
+            </div>
+          </div>
+          <div class="products-pagination">
+            <div class="products-pagination__show-more">
+              <a href="#" class="products-pagination__text">Показати більше</a>
+              <img
+                class="products-pagination__image"
+                src="./images/show-more.svg"
+                alt=""
+              />
+            </div>
+            <div class="products-pagination__pages">
+              <div>
+                <a
+                  class="products-pagination__link products-pagination__link_selected"
+                  href="#"
+                  >1</a
                 >
-                <select
-                  name="sorting-parameters"
-                  id="sorting-parameters"
-                  class="products-sorting__text products-sorting__selector"
+              </div>
+              <div><a class="products-pagination__link" href="#">2</a></div>
+              <div><a class="products-pagination__link" href="#">3</a></div>
+              <div class="products-pagination__link">...</div>
+              <div><a class="products-pagination__link" href="#">6</a></div>
+              <div>
+                <a
+                  class="products-pagination__link products-pagination__link_next-page"
+                  href="#"
+                  >Наступна</a
                 >
-                  <option value="new-products" selected>новинки</option>
-                  <option value="price">ціна</option>
-                  <option value="discounts">знижки</option>
-                  <option value="for-women">для неї</option>
-                  <option value="for-men">для нього</option>
-                </select>
-              </form>
-            </div>
-          </div>
-          <h1 class="products-title">Жіночі вишиванки</h1>
-        </div>
-
-        <div class="products-list">
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/lito_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/lito_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/lito_l.jpg"
-                alt="Вишиванка Літо"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Вишиванка з рослинним орнаментом Lito
-              </p>
-              <p class="product-list__price">2 800 грн.</p>
-            </div>
-          </div>
-
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/fialka_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/fialka_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/fialka_l.jpg"
-                alt="Вишиванка Фіалка"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Вишиванка блакитного кольору з рослинним орнаментом Fialka
-              </p>
-              <p class="product-list__price">3 400 грн.</p>
-            </div>
-          </div>
-
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/nezalezhni_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/nezalezhni_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/nezalezhni_l.jpg"
-                alt="Вишиванка Незалежні"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Лляна вишиванка з геометричним орнаментом Nezalezhni
-              </p>
-              <p class="product-list__price">4 200 грн.</p>
-            </div>
-          </div>
-
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/kashtan_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/kashtan_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/kashtan_l.jpg"
-                alt="Вишиванка Каштан"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Вишиванка з рослинним орнаментом Kashtan
-              </p>
-              <p class="product-list__price">3 800 грн.</p>
-            </div>
-          </div>
-
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/indi_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/indi_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/indi_l.jpg"
-                alt="Вишиванка Інді"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Легка блузка вільного крою з орнаментом Indi
-              </p>
-              <p class="product-list__price">3 800 грн.</p>
-            </div>
-          </div>
-
-          <div class="product-list__card">
-            <picture>
-              <source
-                srcset="./images/svitanok_m.jpg"
-                media="(max-width:700px) and (min-width:500px)"
-              />
-              <source
-                srcset="./images/svitanok_s.jpg"
-                media="(max-width:500px) and (min-width:0px)"
-              />
-              <img
-                src="./images/svitanok_l.jpg"
-                alt="Вишиванка Світанок"
-                class="product-list__image"
-              />
-            </picture>
-            <div class="product-list__text">
-              <p class="product-list__description">
-                Біла вишиванка вільного крою Svitanok
-              </p>
-              <p class="product-list__price">2 980 грн.</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="products-pagination">
-          <div class="products-pagination__show-more">
-            <a href="#" class="products-pagination__text">Показати більше</a>
-            <img
-              class="products-pagination__image"
-              src="./images/show-more.svg"
-              alt=""
-            />
-          </div>
-          <div class="products-pagination__pages">
-            <div>
-              <a
-                class="products-pagination__link products-pagination__link_selected"
-                href="#"
-                >1</a
-              >
-            </div>
-            <div><a class="products-pagination__link" href="#">2</a></div>
-            <div><a class="products-pagination__link" href="#">3</a></div>
-            <div class="products-pagination__link">...</div>
-            <div><a class="products-pagination__link" href="#">6</a></div>
-            <div>
-              <a
-                class="products-pagination__link products-pagination__link_next-page"
-                href="#"
-                >Наступна</a
-              >
-            </div>
-          </div>
-        </div>
+      </main>
+      <div class="products__scroll-arrow">
+        <img
+          class="products__scroll-image"
+          src="./images/scroll-up-arrow.svg"
+          alt="потягни вверх"
+        />
       </div>
-    </main>
+    </div>
+
     <footer class="footer">
       <div class="footer__logo">
         <img src="images/etnodim-logo-main-removebg-preview 2.png" alt="logo" />
@@ -676,4 +707,3 @@
     </footer>
   </body>
 </html>
-  

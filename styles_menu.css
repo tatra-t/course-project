@@ -1,7 +1,7 @@
 @font-face {
-    font-family: 'DelaGothicOne';
-    src: url('fonts/DelaGothicOne/DelaGothicOne-Regular.woff2') format('woff2'),
-         url('fonts/DelaGothicOne/DelaGothicOne-Regular.woff') format('woff');
+    font-family: 'Dela Gothic One';
+    src: url('fonts/DelaGothicOne-Regular.woff2') format('woff2'),
+         url('fonts/DelaGothicOne-Regular.woff') format('woff');
 }
 
 @font-face {
@@ -9,7 +9,7 @@
     src: url('fonts/RalewayFont/Raleway-Regular.woff') format('woff');
 }
 
-.main__navigation:active .nav_link_main:nth-last-child(-n + 3){
+.main__navigation:active .nav_link_main:nth-last-child(-n + 3) {
     display: none;
 }
 
@@ -67,7 +67,7 @@ ul {
 }
 
 .main_menu_catalogue {
-    font-family: 'DelaGothicOne';
+    font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -81,8 +81,14 @@ ul {
     color: #DA1F39;
 }
 
+.main_menu_catalogue:active {
+    background: url('images/arrow.png') right no-repeat;
+    width: 150px;
+    display: block;
+}
+
 .nav_link_main {
-    font-family: 'DelaGothicOne';
+    font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -102,7 +108,7 @@ ul {
 }
 
 .catalogue_item {
-    font-family: 'DelaGothicOne';
+    font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -118,7 +124,7 @@ ul {
 
 .catalogue_item_link {
     text-decoration: none;
-    font-family: 'DelaGothicOne';
+    font-family: 'Dela Gothic One';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
